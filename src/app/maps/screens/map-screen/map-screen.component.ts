@@ -8,4 +8,8 @@ import { PlacesService } from '../../services';
 })
 export class MapScreenComponent {
   constructor(private placesService: PlacesService) {}
+
+  get isUserLocationRedy() {
+    return this.placesService.isUserLocationRedy;
+  }
 }
